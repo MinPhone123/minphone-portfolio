@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.header{
+			
+			background-color: black;
+			width: 100%;
+			padding: 20px 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 100;
+		}
+		.logo {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+		}
+		.navbar a {
+			font-size: 17px;
+			color: white;
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 35px;
+			transition: .2s;
+		}
+		.navbar a:hover {
+			color: red;
+		}
+		.first {
+			margin: 25px;
+			padding: 10px;
+		}
+		.first h1 {
+			margin-bottom: 5px;
+		}
+		.first p {
+			font-size: 35px;
+		}
+		.second {
+			margin-left: 25px;
+			display: flex;
+		}
+		.sec2 {
+			
+			width: 30%;
+			margin-left: 25px;
+		}
+		.sec21 {
+			margin-top: 20px;
+		}
+		.sec22 {
+			margin-top: 35px;
+		}
+		.sec3 {
+			margin-left: 25px;	
+		}
+		.sec31{
+			margin-bottom: 20px;
+
+		}
+
+		.sec31 button{
+			padding: 20px 40px;
+			cursor: pointer;
+			background-color: #80ffbf;
+			border:  #80ffbf;
+		}
+		.sec31 button:hover{
+			background-color: #33ff99;
+		}
+		.sec32 button{
+			padding: 10px 100px;
+			cursor: pointer;
+			background-color: #ffff66;
+			border: #ffff66;
+		}
+		.sec32 button:hover{
+			background-color:  #ffff1a;
+		}
+		.toy {
+			display: flex;
+			margin: 10px 25px;
+		}
+		.toy7 img {
+			width: 100%;
+			height: 20vh;
+			background-color: red;
+		}
+		.toy2 img {
+			width: 100%;
+		}
+		.toy2 a{
+			display: flex;
+			text-decoration: none;
+			color: black;
+		}
+		.toy3 img {
+			width: 100%;
+		}
+		.toy3 a{
+			display: flex;
+			text-decoration: none;
+			color: black;
+		}
+		.toy4 img {
+			width: 100%;
+		}
+		.toy4 a{
+			display: flex;
+			text-decoration: none;
+			color: black;
+		}
+		.toy5 img {
+			width: 100%;
+		}
+		.toy5 a{
+			display: flex;
+			text-decoration: none;
+			color: black;
+		}
+		.toy6 img {
+			width: 100%;
+		}
+		.toy6 a{
+			display: flex;
+			text-decoration: none;
+			color: black;
+		}
+		.item p{
+			margin-left: 25px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			font-size: 25px;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			display: flex;
+			height: 60vh;
+			margin-top: 35px;
+
+		}
+		.help {
+			font-size: 20px;
+			margin: 5vh 40px;
+			
+			
+		}
+		.acoount{
+			margin: 5vh 40px;
+			font-size: 20px;
+
+		}
+		.link h6 {
+			font-size: 20px;
+			margin: 5vh 40px;
+					}
+		h6{
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+
+		footer a {
+			display: flex;
+			color: white;
+			text-decoration: none;
+			margin-bottom: 5px;
+		}
+		footer a:hover{
+			color: red;
+		}
+		.copy {
+			text-align: left;
+			color: red;
+			justify-content: left;
+		}
+		input {
+			padding: 10px 100px;
+		}
+		#gifti {
+			color: red;
+		}
+		.link img {
+			width: 50px;
+			height: 5vh;
+			margin-left: 10px;
+
+		}
+		.link ul{
+			list-style: none;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<a href="" class="logo">Underground RECORD STORE</a>
+		<nav class="navbar">
+			<input  type="text" placeholder="Search fo artists & releases.....">
+		    <a href="the sound.html">Home</a>
+		    <a href="new.html" class="stay">News Vinyl</a>
+		    <a href="second.html">Second-hand</a>
+		    <a href="gift.html" id="gifti">GiftCard</a>
+		    <a href="Record.html">Record Player</a>
+		    
+		    <a href="login.html">Login</a>
+		    <a href="list.html">&#128722</a>
+		</nav>
+	</div>
+	<div class="first">
+		<h1>Record Store X Irkus</h1>
+		<p>Gift Card</p>
+	</div>
+	<div class="second">
+		<div class="sec1">
+			<img src="gift.png">
+		</div>
+		<div class="sec2">
+			<p class="sec21">Product title:    Gift Card</p>
+			<p class="sec21">Product title Gift Card manufacturer  <a href="">Discos Paradiso x Irkus</a></p>
+			<p class="sec21">Catno: GIFT_CARD</p>
+			<p class="sec22">Hi,<br>While you will receive a code that can be used ONLY ONLINE for<br>the moment, for gifting purposes we send you an actual voucher<br>image manually with a TO, FROM and Transaction ID.<br>So, if you are happy with a code, you're set. But if you want<br>something pretty to send to someone digitally, then you're going<br>to tell us the TO and FROM. And once you've sent us the details<br>we will send you the gift card image as soon as possible. If the<br>purchase is made outside store opening hours, it will be sent the<br>following morning.<br>In case that you want a custom amount, send us an email to<br>CONTACT@RECORDSTORE.COM with the details.<br>If you buy more than one gift card and you want them to use in<br>the same checkout you'll have to send us an email to merge both<br>as only one voucher code can be used in the same checkout.<br>CREDITS<br>Art by Irkus M Zeberio - www.irkus.net</p>
+		</div>
+		<div class="sec3">
+		<div>
+			<div class="sec31">
+			    <button>
+				    <p>250$</p>
+				    <p>*Taxes included, shipping price excluded</p>
+			    </button>
+	     	</div>
+	     	<div class="sec31">
+			    <button>
+				    <p>200$</p>
+				    <p>*Taxes included, shipping price excluded</p>
+			    </button>
+			</div>
+			<div class="sec31">
+			    <button>
+				    <p>150$</p>
+				    <p>*Taxes included, shipping price excluded</p>
+			    </button>
+			</div>
+			<div class="sec31">
+			    <button>
+				    <p>50$</p>
+				    <p>*Taxes included, shipping price excluded</p>
+			    </button>
+			</div>
+			<div class="sec31">
+			    <button>
+				    <p>100$</p>
+				    <p>*Taxes included, shipping price excluded</p>
+			    </button>
+			</div>
+			<div class="sec31">
+			    <button>
+				    <p>75$</p>
+				    <p>*Taxes included, shipping price excluded</p>
+			    </button>
+			</div>
+			<div class="sec32">
+				<button>
+					<p>ADD TO WANTLIST</p>
+				</button>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="item">
+		<p>Other items you may be like:</p>
+		<div class="toy">
+			
+			<div class="toy2">
+				<img src="toy7.png">
+				<a href="">Johnny Cash ReAction Figure -<br>The Man In Black</a>
+				<a href="">Johnny Cash</a>
+				<a href="">20$</a>
+			</div>
+			<div class="toy3">
+				<img src="toy3.png">
+				<a href="">Sex Pistols ReAction Figures<br> Wave 2 Sid Vicious (Never Mind<br>The Bollocks)</a>
+				<a href="">Sex Pistols</a>
+				<a href="">20%</a>
+			</div>
+			<div class="toy4">
+				<img src="toy4.png">
+				<a href="">Bootsy Collins (Black And Gold)<br> ReAction figure</a>
+				<a href="">Bootsy Collins</a>
+				<a href="">20$</a>
+			</div>
+			<div class="toy5">
+				<img src="toy5.png">
+				<a href="">Biz Markie ReAction Figure Wave 1</a>
+				<a href="">Biz Markie</a>
+				<a href="">20%</a>
+			</div>
+			<div class="toy6">
+				<img src="toy6.png">
+				<a href="">Notorious B.I.G. ReAction Wave 3<br> (Biggie In Suit)</a>
+				<a href="">The Notorious BIG</a>
+				<a href="">20$</a>
+			</div>
+		</div>
+	</div>
+	 <footer>
+    	<div class="help">
+    		<h6>Help & FAQ</h6>
+    		<a href="">Rewards Program</a>
+    		<a href="">Search</a>
+    		<a href="">About</a>
+    		<a href="">Contact US</a>
+    		<a href="">Frequently Asked Questions</a>
+    		<a href="">Return Policy</a>
+    		<a href="">Privacy Policy</a>
+    		<a href="">Terms Of Use</a>
+    		<a href="">Do Not Sell My Personal Information</a>
+    		<a href="">Cookie Choices</a>
+    		<p>Copyright@2023 Underground Record Store</p>
+    	</div>
+    	<div class="acoount">
+    		<h6>My Account</h6>
+    		<a href="">Log In</a>
+    		<a href="">Wish List</a>
+    		<a href="">My Bag</a>
+    	</div>
+    	<div class="link">
+    		<h6 >Follows us</h6>
+    		<ul>
+    			<li>
+    				<img src="fac.png" width="60px">
+    				<img src="insta.png">
+    				<img src="twitter.png">
+    			</li>
+    		</ul>
+    	</div>
+    	
+    </footer>
+	
+
+</body>
+</html>
