@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.header{
+			position: fixed;
+			background-color: black;
+			width: 100%;
+			padding: 20px 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 100;
+		}
+		.logo {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+		}
+		.navbar a {
+			font-size: 17px;
+			color: white;
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 35px;
+			transition: .2s;
+		}
+		.navbar a:hover {
+			color: red;
+		}
+		.stay {
+			color: red;
+		}
+		.snav {
+			background-color: white;
+
+		}
+
+		}
+		.slider {
+			position: relative;
+			overflow: hidden;
+			width: ;
+		}
+		.images {
+			display: flex;
+		}
+		.images img {
+			height: 55vh;
+			width: 100%;
+			transition: all 0.15s ease;
+
+		}
+		.images input {
+			display: none;
+		}
+		.dot {
+			
+			display: flex;
+			justify-content: center;
+		}
+		.dot label {
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			border: solid #ff3333 1px;
+			cursor: pointer;
+			transition: all 0.15s ease;
+			margin: 5px;
+		} 
+		.dot label:hover {
+			background: black;
+		}
+		#img1:checked ~ .m1 {
+			margin-left: 0;
+		}
+		#img2:checked ~ .m2 {
+			margin-left: -100%;
+		}
+		#img3:checked ~ .m3 {
+			margin-left: -200%;
+		}
+		h2 {
+			margin-left: 70px;
+			color: white;
+		}
+		hr {
+			height: 5px;
+			background: white;
+			border: none;
+			margin: 10px 70px;
+		}
+		.coll p{
+			margin-left: 70px;
+			color: lightgray;
+		}
+		.coll {
+			background-color: black;
+			height: 30vh;
+			padding-top: 25px;
+
+		}
+		.coll button {
+			background-color: green;
+			margin-left: 70px;
+			padding: 10px 20px;
+			cursor: pointer;
+			margin-top: 10px;
+			border: solid 2px;
+
+		}
+		h3 {
+			font-size: 30px;
+		}
+		.tp img {
+			height: 80vh;
+			margin: 80px;
+			width: 49%;
+		}
+		.p1{
+			float: right;
+			margin-top: 20%;
+			margin-right: 10%;
+		}
+		.p1 p{
+			line-height: 40px;
+		}
+		.p1 button{
+			padding: 10px 20px;
+			background-color: black;
+			color: white;
+			cursor: pointer;
+			border: solid 2px;
+		}
+		.new{
+			padding-top: 60px;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			justify-content: center;
+
+		}
+		.newp {
+			text-align: center;
+		}
+		.new1 {
+			font-size: 20px;
+			line-height: 30px;
+		}
+		h4 {
+			font-size: 20px;
+			line-height: 30px;
+		}
+		.new2{
+			font-size: 20px;
+			line-height: 30px;
+		}
+		.newp button{
+			padding: 10px 20px;
+			background-color: black;
+			color: white;
+			border: solid 2px;
+			margin-top: 20px;
+			cursor: pointer;
+
+		}
+		.half {
+			display: flex;
+			flex-wrap: wrap;
+			border: solid 1px;
+			box-shadow:  0 1px 4px #9f6060;
+			margin: 35px;  
+			 
+
+		}
+		.half1 {
+			border-right: 1px solid;
+			width: 33.333%;
+	     	display: inline-block;
+		}
+		.half2 {
+			border-right: 1px solid;
+			width: 33.333%;
+			display: inline-block; 
+		}
+		.half3 {
+			width: 33.333%;
+			display: inline-block;
+		}
+		.halfp {
+			font-weight: 900;
+			font-size: 27px;
+			text-align: center;
+		}
+		.half a{
+			display: flex;
+			text-decoration: none;
+			color: black;
+			
+			justify-content: center;
+
+		}
+		.half a:hover {
+			color: red;
+		}
+		h5 {
+			text-align: center;
+		}
+		.half img {
+			position: absolute;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			display: flex;
+			height: 60vh;
+
+		}
+		.help {
+			font-size: 20px;
+			margin: 5vh 40px;
+			
+			
+		}
+		.acoount{
+			margin: 5vh 40px;
+			font-size: 20px;
+
+		}
+		.link h6 {
+			font-size: 20px;
+			margin: 5vh 40px;
+		}
+		h6{
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+
+		footer a {
+			display: flex;
+			color: white;
+			text-decoration: none;
+			margin-bottom: 5px;
+		}
+		footer a:hover{
+			color: red;
+		}
+		.final {
+			text-align: left;
+			color: red;
+			justify-content: left;
+		}
+		input{
+			padding: 10px 100px;
+		}
+		#Home {
+			color: red;
+		}
+		.link img {
+			width: 50px;
+			height: 5vh;
+			margin-left: 10px;
+
+		}
+		.link ul{
+			list-style: none;
+			margin-left: 20px;
+		}
+
+
+
+		</style>
+</head>
+<body>
+	<header class="header">
+		<a href="" class="logo">Underground RECORD STORE</a>
+	<nav class="navbar">
+		<input  type="text" placeholder="Search fo artists & releases.....">
+		<a href="the sound.html" id="Home">Home</a>
+		<a href="new.html">News Vinyl</a>
+		<a href="second.html">Second-hand</a>
+		<a href="gift.html">GiftCard</a>
+		<a href="Record.html">Record Player</a>
+		
+		<a href="login.html">Login</a>
+		<a href="list.html">&#128722;</a>
+		
+	</nav>	
+	
+
+    </header>
+    
+    <div class="slider">
+    <div class="images">
+    	<input type="radio" name="slide" id="img1">
+    	<input type="radio" name="slide" id="img2">
+    	<input type="radio" name="slide" id="img3">
+
+    	<img src="one.jpg" alt="img1" class="m1">
+    	<img src="two.jpg" alt="img2" class="m2">
+    	<img src="three.jpg" alt="img3" class="m3">
+    </div>
+    <div class="dot">
+    	<label for="img1"></label>
+    	<label for="img2"></label>
+    	<label for="img3"></label>
+    </div>
+    <div class="coll">
+    	<h2>Listen up</h2>
+    	<hr>
+    	<p>A trusted voice since '76' let our rich curtion recommend new music for you, informed by what you spin on spotify.<br>Make it personal. Start listening</p>
+    	<button>CONNECT WITH SPOTIFY</button>
+    </div>
+    <div class="tp">
+    	<img src="s1.jpg">
+    	<div class="p1">
+    	<h3>Albums of the year So Far<br> 2023</h3>
+    	<p ><b>Expore 30 unmissable albums. Did your favourite make the cut?</b></p>
+    	<button >BROWSE NOW</button>
+    </div>
+    </div>
+    <div class="new">
+    	<div class="newp">
+    		<p class="new1">New This Week</p>
+    		<h4>Rough Trade Edit</h4>
+    		<p class="new2">Blur, Molly Tuttle and Golden Highway, The Lilac Time.</p>
+    		<button>DISCOVER NOW</button>
+    	</div>
+    	     
+    	<div>
+    		<img src="new.png">
+    	</div>
+    </div>
+    <div class="halfp">
+    	<p>DISCOVER MUSIC BY</p>
+    </div>
+    <section class="half">
+    	<div class="half1">
+    		
+    			<img src="Music.png" >
+    		
+    		
+    		<h5>Shop By Decade</h5>
+    		
+    			<a href="">1950's</a>
+    			<a href="">1960's</a>
+    			<a href="">1970's</a>
+    			<a href="">1980's</a>
+    			<a href="">1990's</a>
+    			<a href="">2000's</a>
+    			<a href="">see more</a>
+    		
+       	</div>
+       
+    	<div class="half2">
+    		
+    			<img src="Guitar.png" >
+    		
+    		
+    		<h5>Shop by Genre</h5>
+    		
+    			<a href="">Alternative Rock</a>
+    			<a href="">Blues</a>
+    			<a href="">Country</a>
+    			<a href="">Classic Rock</a>
+    			<a href="">Funk & Soul</la>
+    			<a href="">Metal & Punk</a>
+    			<a href="">See More</a>
+    		
+    	</div>
+    	<div class="half3">
+    		
+    			<img src="Viny.png">
+    		
+    		
+    		<h5>Shop by Format</h5>
+    		
+    			<a href="">Heavyweoad Included</a>
+    			<a href="">Color Vinyl</a>
+    			<a href="">Picture Discs</a>
+    			<a href="">Singles</a>
+    			<a href="">Box Sets</a>
+    			<a href="">See more</a>
+    		
+    	</div>
+    </section>
+    <footer>
+    	<div class="help">
+    		<h6>Help & FAQ</h6>
+    		<a href="">Rewards Program</a>
+    		<a href="">Search</a>
+    		<a href="">About</a>
+    		<a href="">Contact US</a>
+    		<a href="">Frequently Asked Questions</a>
+    		<a href="">Return Policy</a>
+    		<a href="">Privacy Policy</a>
+    		<a href="">Terms Of Use</a>
+    		<a href="">Do Not Sell My Personal Information</a>
+    		<a href="">Cookie Choices</a>
+    		<p >Copyright@2023 Uderground Record</p>
+    	</div>
+    	<div class="acoount">
+    		<h6>My Account</h6>
+    		<a href="">Log In</a>
+    		<a href="">Wish List</a>
+    		<a href="">My Bag</a>
+    	</div>
+    	<div class="link">
+    		<h6 >Follows us</h6>
+    		<ul>
+    			<li>
+    				<img src="fac.png" width="60px">
+    				<img src="insta.png">
+    				<img src="twitter.png">
+    			</li>
+    		</ul>
+    	</div>
+    	
+    </footer>
+
+
+
+</body>
+</html>
