@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.header{
+			
+			background-color: black;
+			width: 100%;
+			padding: 20px 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 100;
+		}
+		.logo {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+		}
+		.navbar a {
+			font-size: 17px;
+			color: white;
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 35px;
+			transition: .2s;
+		}
+		.navbar a:hover {
+			color: red;
+		}
+		.login {
+			background-color: #f2f2f2;
+			width: 30%;
+			margin-left: 20%;
+			height: 80vh;
+			box-shadow: 0 1px 3px ;
+			margin-top: 20px;
+		}
+		.login h1{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.text label{
+			display: block;
+			margin-bottom: 5px;
+			margin-left: 5px;
+			margin-top: 5px;
+		}
+		.text input {
+			width: 90%;
+			padding: 5px;
+			margin-left: 5px;
+		}
+		.radio {
+			margin-left: 5px;
+			margin-top: 5px;
+		}
+		.text button{
+			margin-left: 5px;
+			margin-top: 5px;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			cursor: pointer;
+			border: 1px solid black;
+		}
+		.text button:hover{
+			color:  #bfbfbf;
+		}
+		.tex button{
+			margin-left: 5px;
+			margin-top: 10px;
+			padding: 10px 30px;
+			background-color: lightgreen;
+			border: 1px solid lightgreen;
+			cursor: pointer;
+		}
+		.list ul{
+			list-style: none;
+			margin-left: 5px;
+			padding-top: 2px;
+		}
+		.te button{
+			padding: 5px 15px;
+			margin-left: 5px;
+			margin-top: 10px;
+			background-color: black;
+			color: white;
+			cursor: pointer;
+		}
+		.te button:hover{
+			color:  #bfbfbf;
+		}
+		.new {
+			background-color: #f2f2f2;
+			width: 30%;
+			height: 80vh;
+			box-shadow: 0 1px 3px ;
+			margin-left: 10px;
+			margin-top: 20px;margin-right: 20%;
+
+		}
+		.account {
+			
+			display: flex;
+		}
+		.new h1{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.cre label{
+			display: block;
+			margin-left: 5px;
+			margin-bottom: 5px;
+			margin-top: 5px;
+		}
+		.cre input{
+			margin-left: 5px;
+			padding: 5px;
+			width: 90%;
+		}
+		.cr input{
+			margin-left: 5px;
+			margin-top: 10px;
+		}
+		.crea button{
+			margin-left: 6px;
+			margin-top: 10px;
+			padding: 5px 10px;
+			background-color: #000000;
+			color: white;
+			cursor: pointer;
+		}
+		.crea button:hover{
+			color:  #bfbfbf;
+		}
+        footer {
+            background-color: black;
+            color: white;
+            display: flex;
+            height: 60vh;
+            margin-top: 20px;
+
+        }
+        .help {
+            font-size: 20px;
+            margin: 5vh 40px;
+            
+            
+        }
+        .acoount{
+            margin: 5vh 40px;
+            font-size: 20px;
+
+        }
+        .link h6 {
+            font-size: 20px;
+            margin: 5vh 40px;
+        }
+        h6{
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        footer a {
+            display: flex;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer a:hover{
+            color: red;
+        }
+        .final {
+            text-align: left;
+            color: red;
+            justify-content: left;
+        }
+        input{
+            padding: 10px 100px;
+        }
+        .link img {
+            width: 50px;
+            height: 5vh;
+            margin-left: 10px;
+
+        }
+        .link ul{
+            list-style: none;
+            margin-left: 20px;
+        }
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<a href="" class="logo">Underground RECORD STORE</a>
+		<nav class="navbar">
+			<input  type="text" placeholder="Search fo artists & releases.....">
+		    <a href="the sound.html">Home</a>
+		    <a href="new.html" class="stay">News Vinyl</a>
+		    <a href="second.html">Second-hand</a>
+		    <a href="gift.html">GiftCard</a>
+		    <a href="Record.html">Record Player</a>
+		    
+		    <a href="login.html">Login</a>
+		    <a href="list.html">&#128722</a>
+		</nav>
+	</div>
+<div class="account">
+	<div class="login">
+		<h1>Login to your account</h1>
+		<div class="text">
+			<label>Enter Your Email address</label>
+			<input type="text" id="username" placeholder="Your email address">
+		</div>
+		<div class="text">
+			<label>Enter Your password</label>
+			<input type="password" id="password" placeholder="Your password">
+		</div>
+		<div class="radio">
+			<input type="radio" >
+			<label>Remember me</label>
+		</div>
+		<div class="text">
+			<button>Login</button>
+		</div>
+		<div class="tex">
+			<button>SIGN UP WITH SPOTIGY</button>
+		</div>
+		<div class="list">
+		    <ul>
+		    	<li>&#x2713; Listen to full tracks (with Spotify Premium Only).</li>
+		    	<li>&#x2713; Receive personalised recommendations based on your Spotify listening.</li>
+		    	<li>&#x2713; Export your Rough Trade purchase history as a playlist (coming soon).</li>
+		    </ul>
+	    </div>
+	    <div class="te">
+	    	<button>Login</button>
+	    </div>		
+	</div>
+	<div class="new">
+		<h1>Create account</h1>
+		<div class="cre">
+			<label>Enter your email address</label>
+			<input type="text" id="username" placeholder="Your email address">
+		</div>
+		<div class="cre">
+			<label>First Name</label>
+			<input type="text" placeholder="First Name">
+		</div>
+		<div class="cre">
+			<label>Last Name</label>
+			<input type="text" placeholder="last name">
+		</div>
+		<div class="cre">
+			<label>Enter Your Passord</label>
+			<input type="password" id="password" placeholder="Your password">
+		</div>
+		<div class="cr">
+			<input type="radio">
+			<label>Subscribe to our newsletter</label>
+		</div>
+		<div class="crea">
+			<button>SUBMIT</button>
+		</div>
+	</div>
+</div>
+<footer>
+        <div class="help">
+            <h6>Help & FAQ</h6>
+            <a href="">Rewards Program</a>
+            <a href="">Search</a>
+            <a href="">About</a>
+            <a href="">Contact US</a>
+            <a href="">Frequently Asked Questions</a>
+            <a href="">Return Policy</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms Of Use</a>
+            <a href="">Do Not Sell My Personal Information</a>
+            <a href="">Cookie Choices</a>
+            <p >Copyright@2023 Underground Record Store</p>
+        </div>
+        <div class="acoount">
+            <h6>My Account</h6>
+            <a href="">Log In</a>
+            <a href="">Wish List</a>
+            <a href="">My Bag</a>
+        </div>
+        <div class="link">
+            <h6 >Follows us</h6>
+            <ul>
+                <li>
+                    <img src="fac.png" width="60px">
+                    <img src="insta.png">
+                    <img src="twitter.png">
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
+	
+
+</body>
+</html>
