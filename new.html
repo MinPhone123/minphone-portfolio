@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.header{
+			
+			background-color: black;
+			width: 100%;
+			padding: 20px 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 100;
+		}
+		.logo {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+		}
+		.navbar a {
+			font-size: 17px;
+			color: white;
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 35px;
+			transition: .2s;
+		}
+		.navbar a:hover {
+			color: red;
+		}
+		.new {
+			text-align: center;
+
+		}
+		.new {
+			text-align: center;
+			
+		}
+		.main {
+			height: 10vh;
+			display: flex;
+			justify-content: space-between;
+
+		}
+		.right {
+			display: flex;
+			margin: 5vh 20%;
+
+		}
+		.left {
+			margin: 5vh 20%;
+		}
+		.right a {
+			text-decoration: none;
+			padding-left: 10px;
+		}
+		.right a:hover{
+			color: red;
+		}
+		.now {
+			color: red;
+		}
+		.no {
+			color: black;
+		}
+		h1 {
+			margin-top: 15px;
+		}
+		.one{	
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.one img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);	
+			width: 100%;	
+		}
+		.one1 a{
+			display: flex;
+			text-decoration: none;
+			color: black;
+		}
+		.one2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.one3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.one4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.two {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.two img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.two1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.two2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.two3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.two4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.three {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.three img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.three1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.three2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.three3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.three4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.four {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.four img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.four1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.four2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.four3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.four4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.five {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.five img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.five1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.five2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.five3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.five4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+
+		.six {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.six img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.six1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.six2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.six3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.six4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+
+		.seven {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.seven img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.seven1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.seven2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.seven3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.seven4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+
+		.eight {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.eight img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.eight1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.eight2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.eight3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.eight4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+
+		.nine {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.nine img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.nine1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.nine2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.nine3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.nine4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+
+		.ten {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.ten img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+	    }
+	    .ten1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.ten2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.ten3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.ten4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.final {
+			height: 10vh;
+			display: flex;
+			justify-content: space-between;
+
+		}
+		.right2 {
+			display: flex;
+			margin: 0vh 20%;
+
+		}
+		
+		.right2 a {
+			text-decoration: none;
+			padding-left: 10px;
+		}
+		.right2 a:hover{
+			color: red;
+		}
+		.left2 {
+			margin: 0vh 20%;
+		}
+		.left2 a{
+			text-decoration: none;
+			color: black;
+		}
+		.left2 a:hover{
+			color: red;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			display: flex;
+			height: 60vh;
+
+		}
+		.help {
+			font-size: 20px;
+			margin: 5vh 40px;
+			
+			
+		}
+		.acoount{
+			margin: 5vh 40px;
+			font-size: 20px;
+
+		}
+		.link h6 {
+			font-size: 20px;
+			margin: 5vh 40px;
+		}
+		h6{
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+
+		footer a {
+			display: flex;
+			color: white;
+			text-decoration: none;
+			margin-bottom: 5px;
+		}
+		footer a:hover{
+			color: red;
+		}
+		input{
+			padding: 10px 100px;
+		}
+		#newi {
+			color: red;
+		}
+		.link img {
+			width: 50px;
+			height: 5vh;
+			margin-left: 10px;
+
+		}
+		.link ul{
+			list-style: none;
+			margin-left: 20px;
+		}
+		
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="header">
+		<a href="" class="logo">Underground RECORD STORE</a>
+		<nav class="navbar">
+			<input  type="text" placeholder="Search fo artists & releases.....">
+		    <a href="the sound.html">Home</a>
+		    <a href="new.html" id="newi">News Vinyl</a>
+		    <a href="second.html">Second-hand</a>
+		    <a href="gift.html">GiftCard</a>
+		    <a href="Record.html">Record Player</a>
+		    		    <a href="login.html">Login</a>
+		    <a href="list.html">&#128722</a>
+		</nav>
+	</div>
+	<h1 class="new">New Releases</h1>
+    <div class="main">
+         	<p class="left">Shop By</p>
+         	<div class="right">
+         		<p>Page 1 of 53</p>
+         	    <a href="" class="now">40/</a>
+         	    <a href="" class="no">80/</a>
+         	    <a href="" class="no">120</a>
+         	    <a>Next</a>
+         	</div>        	
+    </div>
+    <div class="meain">
+    	<div class="one">
+    		<div class="one1">
+    		    <img src="new-1.png" >
+    		    <a href="">15.28$ &#128722</a>
+    		    <a href="">Troy</a>
+    		    <a href="">Kayak</a>
+    		    <a href="">&#9658; &#9658; &#9658;  &#9658; </a>
+    		</div>
+    		<div class="one2">
+    		    <img src="new-2.png" >
+    		    <a href="">14.19$ &#128722</a>
+    		    <a href="">Flavio Folco</a>
+    		    <a href="">Father EP</a>
+    		    <a href="">&#9658; &#9658; &#9658;</a>
+    		</div>
+    		<div class="one3">
+    		    <img src="new-3.png" >
+    		    <a href="">17.47$ &#128722</a>
+    		    <a href="">Funtown</a>
+    		    <a href="">Bigger Fun</a>
+    		    <a href="">&#9658;</a>
+    		</div>
+    		<div class="one4">
+    		    <img src="new-4.png" >
+    		    <a href="">17.47$ &#128722</a>
+    		    <a href="">Funtown</a>
+    		    <a href="">Better 2 Know U</a>
+    		    <a href="">&#9658;</a>
+    		</div>
+    	</div>
+    	<div class="two">
+    		<div class="two1">
+    			<img src="new-5.png">
+    			<a href="">22.93$ &#128722</a>
+    			<a href="">Dorisburg Sebastian Mullaert</a>
+    			<a href="">That Who Remembers</a>
+    			<a href="">&#9658;&#9658;&#9658;</a>
+    		</div>
+    		<div class="two2">
+    			<img src="new-6.png">
+    			<a href="">18.56$ &#128722</a>
+    			<a href="">Patrizia Pellegrino</a>
+    			<a href="">Musica Spaziale</a>
+    			
+    		</div>
+    		<div class="two3">
+    			<img src="new-7.png">
+    			<a href="">14.19$ &#128722</a>
+    			<a href="">Larry Heard</a>
+    			<a href="">Vault Sessions 2</a>
+    			<a href="">&#9658; &#9658; &#9658;</a>
+    		</div>
+    		<div class="two4">
+    			<img src="new-8.png">
+    			<a href="">33.84$ &#128722</a>
+    			<a href="">Sam Brickel</a>
+    			<a href="">The Pulse Of Life</a>
+    			<a href="">&#9658;&#9658;</a>
+    		</div>
+    	</div>
+    	<div class="three">
+    		<div class="three1">
+    			<img src="new-9.png">
+    			<a href="">18.56$ &#128722</a>
+    			<a href="">The Soft Moon</a>
+    			<a href="">Exister Remixed</a>
+    			<a href="">&#9658; &#9658; &#9658; &#9658; &#9658;</a>
+    		</div>
+    		<div class="three2">
+    			<img src="new-10.png">
+    			<a href="">29.48$ &#128722</a>
+    			<a href="">Various</a>
+    			<a href="">Femirama</a>
+    		</div>
+    		<div class="three3">
+    			<img src="new-11.png">
+    			<a href="">15.28$ &#128722</a>
+    			<a href="">Miles</a>
+    			<a href="">Peeking Through Clouds</a>
+    			<a href="">&#9658; &#9658; &#9658;</a>
+    		</div>
+    		<div class="three4">
+    			<img src="new-12.png">
+    			<a href="">26.20$ &#128722</a>
+    			<a href="">Omar-S</a>
+    			<a href="">Pain</a>
+    			<a href="">&#9658;</a>
+    		</div>
+    	</div>
+    	<div class="four">
+    		<div class="four1">
+    			<img src="new-13.png">
+    			<a href="">15.28$  &#128722</a>
+    			<a href="">Anna Wall Corbi</a>
+    			<a href="">Satellite EP</a>
+    			<a href="">&#9658;&#9658;&#9658;&#9658;</a>
+    		</div>
+    		<div class="four2">
+    			<img src="new-14.png">
+    			<a href="">15.28$  &#128722</a>
+    			<a href="">Various</a>
+    			<a href="">Secret Rave 06</a>
+    			<a href="">&#9658; &#9658;</a>
+    		</div>
+    		<div class="four3">
+    			<img src="new-15.png">
+    			<a href="">18.56$ &#128722</a>
+    			<a href="">Joey Beltram</a>
+    			<a href="">Beltram Volume 2</a>
+    			<a href="">&#9658; &#9658; &#9658;</a>
+    		</div>
+    		<div class="four4">
+    			<img src="new-16.png">
+    			<a href="">29.48$ &#128722</a>
+    			<a href="">Ex Wiish</a>
+    			<a href="">Shards Of Axel</a>
+    			<a href="">&#9658;</a>
+    		</div>
+    	</div>
+    	<div class="five">
+    		<div class="five1">
+    			<img src="new-17.png">
+    			<a href="">13.10$ &#128722</a>
+    			<a href="">Zadig</a>
+    			<a href="">Gradient EP</a>
+    			<a href="">&#9658; &#9658;</a>
+    		</div>
+    		<div class="five2">
+    			<img src="new-18.png">
+    			<a href="">31.66$ &#128722</a>
+    			<a href="">Various</a>
+    			<a href="">A Moi La Liberté, Early Electronic Raï, Algérie 1983-90</a>
+    			<a href=""> &#9658;</a>
+    		</div>   		   	
+    		<div class="five3">
+    			<img src="new-19.png">
+    			<a href="">21.83$  &#128722</a>
+    			<a href="">Andi Machino</a>
+    			<a href="">Parafernales</a>
+    			<a href="">&#9658; &#9658; &#9658;</a>
+    		</div>
+    		<div class="five4">
+    			<img src="new-20.png">
+    			<a href="">26.20$ &#128722</a>
+    			<a href="">Odissey</a>
+    			<a href="">Pa Flipé</a>
+    			<a href=""> &#9658;</a>
+    		</div>
+       	</div>
+    	<div class="six">
+    		<div class="six1">
+    			<img src="new-21.png">
+    			<a href="">13.10$  &#128722</a>
+    			<a href="">PLO Man</a>
+    			<a href="">Anonymousmaterial</a>
+    			<a href="">&#9658;&#9658;</a>
+    		</div>
+    		<div class="six2">
+    			<img src="new-22.png">
+    			<a href="">18.56$ &#128722</a>
+    			<a href="">Corp Cavalry Stone</a>
+    			<a href="">Forbidden Direction</a>
+    			<a href="">&#9658;&#9658;&#9658;</a>
+    		</div>
+    		<div class="six3">
+    			<img src="new-23.png">
+    		    <a href="">16.38$ &#128722</a>
+    		    <a href="">Nuclear Waste</a>
+    		    <a href="">Nuclear Acid EP</a>
+    		</div>
+    		<div class="six4">
+    			<img src="new-24.png">
+    			<a href="">41.48$  &#128722</a>
+    			<a href="">Orpheu The Wizard</a>
+    			<a href="">The Sound Of Love International #005</a>
+    			<a href="">&#9658;</a>
+    		</div>
+    	</div>
+    	<div class="seven">
+    		<div class="seven1">
+    			<img src="new-25.png">
+    			<a href="">29.48$ &#128722</a>
+    			<a href="">Aphex Twin</a>
+    			<a href="">Blackbox Life Recorder 21f / In A Room7 F760</a>
+    			<a href="">&#9658;&#9658;&#9658;</a>
+    		</div>
+    		<div class="seven2">
+    			<img src="new-26.png">
+    			<a href="">13.10$ &#128722</a>
+    			<a href="">Zoron</a>
+    			<a href="">Waiting For The Grid To Go Down</a>
+    			<a href="">&#9658;</a>
+    		</div>
+    		<div class="seven3">
+    			<img src="new-27.png">
+    			<a href="">13.10$ &#128722</a>
+    			<a href="">DJ Spence</a>
+    			<a href="">Fan Needed</a>
+    		</div>
+    		<div class="seven4">
+    			<img src="new-28.png">
+    			<a href="">13.10$ &#128722</a>
+    			<a href="">P Relief</a>
+    			<a href="">Dusted</a>
+    			<a href="">&#9658;&#9658;&#9658;</a>
+
+    		</div>
+    	</div>
+    	<div class="eight">
+    		<div class="eight1">
+    			<img src="new-29.png">
+    			<a href="">32.75$ &#128722</a>
+    			<a href="">Silicon Scally</a>
+    			<a href="">Mr Machine Pt2</a>
+    			<a href="">&#9658;&#9658;&#9658;&#9658;</a>
+    		</div>
+    		<div class="eight2">
+    			<img src="new-30.png">
+    			<a href="">38.21$ &#128722</a>
+    			<a href="">Mr. Fingers</a>
+    			<a href="">Around The Sun Pt.2</a>
+    			<a href="">&#9658;&#9658;</a>
+    		</div>
+    		<div class="eight3">
+    			<img src="new-31.png">
+    			<a href="">16.38$ &#128722</a>
+    			<a href="">TOBI Rinzzi F_Phono C.ru.z</a>
+    			<a href="">22247002</a>
+    			<a href="">&#9658;</a>
+    		</div>
+    		<div class="eight4">
+    			<img src="new-32.png">
+    			<a href="">16.38$ &#128722</a>
+    			<a href="">A.M.Q.N. P.O Charlou Downrocks</a>
+    			<a href="">Capitulo II</a>
+    			<a href="">&#9658;&#9658;&#9658;</a>
+    		</div>
+    	</div>
+    	<div class="nine">
+    		<div class="nine1">
+    			<img src="new-33.png">
+    			<a href="">15.28$ &#128722</a>
+    			<a href="">Sumerian Fleet</a>
+    			<a href="">Sumerian Fleet</a>
+    			<a href="">&#9658;&#9658;&#9658;</a>
+    		</div>
+    		<div class="nine2">
+    			<img src="new-34.png">
+    			<a href="">41.48$ &#128722</a>
+    			<a href="">Bushwacka!</a>
+    			<a href="">Presents: The Beginning Or The End Part. 1</a>
+    			<a href="">&#9658;</a>
+    		</div>
+    		<div class="nine3">
+    			<img src="new-35.png">
+    			<a href="">36.03$ &#128722</a>
+    			<a href="">Transparent Sound</a>
+    			<a href="">Accidents 1994-2023</a>
+    			<a href="">&#9658;&#9658;&#9658;&#9658;</a>
+    		</div>
+    		<div class="nine4">
+    			<img src="new-36.png">
+    			<a href="">28.38$ &#128722</a>
+    			<a href="">The Exaltics</a>
+    			<a href="">The 7th Planet</a>
+    		</div>
+    	</div>
+    	<div class="ten">
+    		<div class="ten1">
+    			<img src="new-37.png">
+    			<a href="">13.10$ &#128722</a>
+    			<a href="">Larry Heard Mr. White</a>
+    			<a href="">You Rock Me / The Sun Can't Compare</a>
+    			<a href="">&#9658;&#9658;&#9658;</a>
+    		</div>
+    		<div class="ten2">
+    			<img src="new-38.png">
+    			<a href="">20.74$ &#128722</a>
+    			<a href="">Innershades</a>
+    			<a href="">Summer Love EP</a>
+    			<a href="">&#9658;</a>
+    		</div>
+    		<div class="ten3">
+    			<img src="new-39.png">
+    			<a href="">15.28$ &#128722</a>
+    			<a href="">Various</a>
+    			<a href="">Unknown Prospect Vol. 1</a>
+    			<a href="">&#9658;&#9658;&#9658;&#9658;</a>
+    		</div>
+    		<div class="ten4">
+    			<img src="new-40.png">
+    			<a href="">13.10$ &#128722</a>
+    		    <a>Olympic Pool Maintenance League</a>
+    			<a href="">Empathy</a>
+    			<a href="">&#9658;&#9658;</a>
+    		</div>
+    	</div>    	
+    </div>
+    <div class="final">
+    	<p class="left2"><a href="">Back</a></p>
+         <div class="right2">         	
+            <p>Page 1 of 53</p>
+            <a href="" class="now">40/</a>
+            <a href="" class="no">80/</a>
+            <a href="" class="no">120</a>
+            <a>Next</a>
+        </div>
+    </div>
+    <footer>
+    	<div class="help">
+    		<h6>Help & FAQ</h6>
+    		<a href="">Rewards Program</a>
+    		<a href="">Search</a>
+    		<a href="">About</a>
+    		<a href="">Contact US</a>
+    		<a href="">Frequently Asked Questions</a>
+    		<a href="">Return Policy</a>
+    		<a href="">Privacy Policy</a>
+    		<a href="">Terms Of Use</a>
+    		<a href="">Do Not Sell My Personal Information</a>
+    		<a href="">Cookie Choices</a>
+    		<p >Copyright@2023 Underground Record Store</p>
+    	</div>
+    	<div class="acoount">
+    		<h6>My Account</h6>
+    		<a href="">Log In</a>
+    		<a href="">Wish List</a>
+    		<a href="">My Bag</a>
+    	</div>
+    	<div class="link">
+    		<h6 >Follows us</h6>
+    		<ul>
+    			<li>
+    				<img src="fac.png" width="60px">
+    				<img src="insta.png">
+    				<img src="twitter.png">
+    			</li>
+    		</ul>
+    	</div>
+    	
+    </footer>
+
+</body>
+</html>
