@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.header{
+			
+			background-color: black;
+			width: 100%;
+			padding: 20px 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 100;
+		}
+		.logo {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+		}
+		.navbar a {
+			font-size: 17px;
+			color: white;
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 35px;
+			transition: .2s;
+		}
+		.navbar a:hover {
+			color: red;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 15px;
+		}
+		.main {
+			height: 10vh;
+			display: flex;
+			justify-content: space-between;
+
+		}
+		.right {
+			display: flex;
+			margin: 5vh 20%;
+
+		}
+		.left {
+			margin: 5vh 20%;
+		}
+		.right a {
+			text-decoration: none;
+			padding-left: 10px;
+		}
+		.right a:hover{
+			color: red;
+		}
+		.now {
+			color: red;
+		}
+		.one{
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.one img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);	
+			width: 100%;	
+		}
+		.one1 a{
+			display: flex;
+			text-decoration: none;
+			color: black;
+		}
+		.one2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.one3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.one4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.two {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.two img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.two1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.two2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.two3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.two4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.three {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.three img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.three1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.three2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.three3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.three4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.four {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.four img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.four1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.four2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.four3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.four4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.five {
+			display: flex;
+			height: 50vh;
+			margin: 3vh 15%;
+		}
+		.five img {
+			padding-left: 17px;
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			width: 100%;
+		}
+		.five1 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.five2 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.five3 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.five4 a {
+			display: flex;
+			text-decoration: none;
+			color: black;
+			margin-left: 16px;
+		}
+		.final {
+			height: 10vh;
+			display: flex;
+			justify-content: space-between;
+
+		}
+		.right2 {
+			display: flex;
+			margin: 0vh 20%;
+
+		}
+		
+		.right2 a {
+			text-decoration: none;
+			padding-left: 10px;
+		}
+		.right2 a:hover{
+			color: red;
+		}
+		.left2 {
+			margin: 0vh 20%;
+		}
+		.left2 a{
+			text-decoration: none;
+			color: black;
+		}
+		.left2 a:hover{
+			color: red;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			display: flex;
+			height: 60vh;
+
+		}
+		.help {
+			font-size: 20px;
+			margin: 5vh 40px;
+			
+			
+		}
+		.acoount{
+			margin: 5vh 40px;
+			font-size: 20px;
+
+		}
+		.link h6 {
+			font-size: 20px;
+			margin: 5vh 40px;
+		}
+		h6{
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+
+		footer a {
+			display: flex;
+			color: white;
+			text-decoration: none;
+			margin-bottom: 5px;
+		}
+		footer a:hover{
+			color: red;
+		}
+		input{
+			padding: 10px 100px;
+		}
+		#secondi {
+			color: red;
+		}
+		.link img {
+			width: 50px;
+			height: 5vh;
+			margin-left: 10px;
+
+		}
+		.link ul{
+			list-style: none;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<body>
+	<div class="header">
+		<a href="" class="logo">Underground RECORD STORE</a>
+		<nav class="navbar">
+			<input  type="text" placeholder="Search fo artists & releases.....">
+		    <a href="the sound.html">Home</a>
+		    <a href="new.html" class="stay">News Vinyl</a>
+		    <a href="second.html" id="secondi">Second-hand</a>
+		    <a href="gift.html">GiftCard</a>
+		    <a href="Record.html">Record Player</a>
+		    
+		    <a href="login.html">Login</a>
+		    <a href="list.html">&#128722</a>
+		</nav>
+	</div>
+	<h1 class="new">Second-hand</h1>
+    <div class="main">
+         	<p class="left">Shop By</p>
+         	<div class="right">
+         		<p>Page 1 of 53</p>
+         	    <a href="" class="now">40/</a>
+         	    <a href="" class="no">80/</a>
+         	    <a href="" class="no">120</a>
+         	    <a>Next</a>
+         	</div>        	
+    </div>
+    <div class="meain">
+    	<div class="one">
+    		<div class="one1">
+    		    <img src="sec1.png" >
+    		    <a href="">55.05$ &#128722</a>
+    		    <a href="">Sebastiao Tapajos Pedro Dos Santos</a>
+    		    <a href="">Sebastiao Tapajos / Pedro Dos Santos Vol. 2</a>
+    		</div>
+    		<div class="one2">
+    		    <img src="sec2.png" >
+    		    <a href="">38.53$ &#128722</a>
+    		    <a href="">Yaleesa Hall Malin Genie</a>
+    		    <a href="">Oganesson</a>
+    		</div>
+    		<div class="one3">
+    		    <img src="sec3.png" >
+    		    <a href="">38.53$  &#128722</a>
+    		    <a href="">Ricardo Miño</a>
+    		    <a href="">Puerta De Triana (Flamenco De Concierto)</a>
+    		</div>
+    		<div class="one4">
+    		    <img src="sec4.png" >
+    		    <a href="">93.58$ &#128722</a>
+    		    <a href="">Lady D</a>
+    		    <a href="">I'm Yours Tonight..!</a>
+    		</div>
+    	</div>
+    	<div class="two">
+    		<div class="two1">
+    			<img src="sec5.png">
+    			<a href="">55.05$ &#128722</a>
+    			<a href="">Coleman Hawkins Bud Powell Oscar Pettiford Kenny Clarke</a>
+    			<a href="">The Essen Jazz Festival All Stars</a>
+    		</div>
+    		<div class="two2">
+    			<img src="sec6.png">
+    			<a href="">44.04$ &#128722</a>
+    			<a href="">Fila Brazillia</a>
+    			<a href="">AnotherLateNight</a>
+    			
+    		</div>
+    		<div class="two3">
+    			<img src="sec7.png">
+    			<a href="">11.01$ &#128722</a>
+    			<a href="">Various</a>
+    			<a href="">La Noche Mas Loca Mix 2</a>
+    		</div>
+    		<div class="two4">
+    			<img src="sec8.png">
+    			<a href="">44.04$ &#128722</a>
+    			<a href="">Club 8</a>
+    			<a href="">Club 8</a>
+    		</div>
+    	</div>
+    	<div class="three">
+    		<div class="three1">
+    			<img src="rec5.png">
+    			<a href="">338.01$ &#128722</a>
+    			<a href="">Victrola V1 +SUB VPMS-1-ESP-EU </a>
+    			<a href="">Record Player with Bluetooth Espresso</a>
+    		</div>
+    		<div class="three2">
+    			<img src="rec2.png">
+    			<a href="">251.90$  &#128722</a>
+    			<a href="">Victrola Empire VTA-270B-ESP-EU Automatic</a>
+    			<a href="">Record Player with 3 Speed Turntable in Espresso</a>
+    		</div>
+    		<div class="three3">
+    			<img src="rec3.png">
+    			<a href="">339.10$ &#128722</a>
+    			<a href="">Sony PS-LX310BT Belt Drive Bluetooth Turntable</a>
+    			<a href="">In Black</a>
+    		</div>
+    		<div class="three4">
+    			<img src="rec4.png">
+    			<a href="">1,114.73$ &#128722</a>
+    			<a href="">Technics SL-100C Direct Drive Turntable</a>
+    			<a href="">In Black</a>
+    		</div>
+    	</div>
+    	<div class="four">
+    		<div class="four1">
+    			<img src="sec9.png">
+    			<a href="">22.02$  &#128722</a>
+    			<a href="">Kim Sagild</a>
+    			<a href="">Kim Sagild</a>
+    		</div>
+    		<div class="four2">
+    			<img src="sec10.png">
+    			<a href="">4.40$  &#128722</a>
+    			<a href="">Sistema</a>
+    			<a href="">Te Vi El Hojaldre E.P.</a>
+    		</div>
+    		<div class="four3">
+    			<img src="sec11.png">
+    			<a href="">154.14$ &#128722</a>
+    			<a href="">Xanadu</a>
+    			<a href="">Ein Tag, Eine Nacht...</a>
+    		</div>
+    		<div class="four4">
+    			<img src="sec12.png">
+    			<a href="">44.04$ &#128722</a>
+    			<a href="">P J Harvey</a>
+    			<a href="">Dry</a>    		
+    		</div>
+    	</div>
+    	<div class="five">
+    		<div class="five1">
+    			<img src="sec13.png">
+    			<a href="">99.09$ &#128722</a>
+    			<a href="">Kings Of Convenience</a>
+    			<a href="">Riot On An Empty Street</a>
+    		</div>
+    		<div class="five2">
+    			<img src="sec14.png">
+    			<a href="">33.03$ &#128722</a>
+    			<a href="">DX</a>
+    			<a href="">Serve Your System</a>
+    		</div>   		   	
+    		<div class="five3">
+    			<img src="sec15.png">
+    			<a href="">66.06$  &#128722</a>
+    			<a href="">Various</a>
+    			<a href="">Personal Space Electronic Soul 1974 - 1984</a>
+    		</div>
+    		<div class="five4">
+    			<img src="sec16.png">
+    			<a href="">110.10$ &#128722</a>
+    			<a href="">Madonna</a>
+    			<a href="">Who's That Girl/Causing A Commotion</a>
+    		</div>
+       	</div>
+       	<div class="final">
+    	<p class="left2"><a href="">Back</a></p>
+         <div class="right2">         	
+            <p>Page 1 of 53</p>
+            <a href="" class="now">40/</a>
+            <a href="" class="no">80/</a>
+            <a href="" class="no">120</a>
+            <a>Next</a>
+        </div>
+    </div>
+    <footer>
+    	<div class="help">
+    		<h6>Help & FAQ</h6>
+    		<a href="">Rewards Program</a>
+    		<a href="">Search</a>
+    		<a href="">About</a>
+    		<a href="">Contact US</a>
+    		<a href="">Frequently Asked Questions</a>
+    		<a href="">Return Policy</a>
+    		<a href="">Privacy Policy</a>
+    		<a href="">Terms Of Use</a>
+    		<a href="">Do Not Sell My Personal Information</a>
+    		<a href="">Cookie Choices</a>
+    		<p >Copyright@2023 Underground Record Store</p>
+    	</div>
+    	<div class="acoount">
+    		<h6>My Account</h6>
+    		<a href="">Log In</a>
+    		<a href="">Wish List</a>
+    		<a href="">My Bag</a>
+    	</div>
+    	<div class="link">
+    		<h6 >Follows us</h6>
+    		<ul>
+    			<li>
+    				<img src="fac.png" width="60px">
+    				<img src="insta.png">
+    				<img src="twitter.png">
+    			</li>
+    		</ul>
+    	</div>
+    	
+    </footer>
+
+</body>
+</html>
