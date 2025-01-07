@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.header{
+			
+			background-color: black;
+			width: 100%;
+			padding: 20px 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 100;
+		}
+		.logo {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+		}
+		.navbar a {
+			font-size: 17px;
+			color: white;
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 35px;
+			transition: .2s;
+		}
+		.navbar a:hover {
+			color: red;
+		}
+		.choice {
+			
+		}
+		.label {
+			display: flex;
+			height: 10vh;
+			justify-content: space-between;
+			
+		}
+		h1 {
+			margin-top: 10px;
+			margin-left: 15%;
+		}
+		.right {
+			margin-top: 20px;
+			margin-right: 15%;
+		}
+		.right select {
+			padding: 5px 10px;
+		}
+		.right label{
+			padding: 10px;
+		}
+		.pla {
+			display: flex;
+			margin: 20px;
+		}
+		.pla1 img{
+			width: 100%;
+			cursor: pointer;
+			margin: 20px;
+		}
+		.pla1 img:hover{
+			content: url("pla11.png");
+		}
+		.pla1 p{
+			margin-left: 25px;
+		}
+		
+		.pla2 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla2 img:hover{
+			content: url("pla13.png");
+		}
+		.pla2 p{
+			margin-left: 25px;
+		}
+
+		.pla3 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla3 img:hover{
+			content: url("pla12.png");
+		}
+		.pla3 p{
+			margin-left: 25px;
+		}
+
+		.pla4 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla4 img:hover{
+			content: url("pla14.png");
+		}
+		.pla4 p{
+			margin-left: 25px;
+		}
+		.pla5 img{
+			width: 100%;
+			cursor: pointer;
+			margin: 20px;
+		}
+		.pla5 img:hover{
+			content: url("pla51.png");
+		}
+		.pla5 p{
+			margin-left: 25px;
+		}
+		
+		.pla6 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla6 img:hover{
+			content: url("pla61.png");
+		}
+		.pla6 p{
+			margin-left: 25px;
+		}
+
+		.pla7 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla7 img:hover{
+			content: url("pla71.png");
+		}
+		.pla7 p{
+			margin-left: 25px;
+		}
+
+		.pla8 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla8 img:hover{
+			content: url("pla81.png");
+		}
+		.pla8 p{
+			margin-left: 25px;
+		}
+		.pla9 img{
+			width: 100%;
+			cursor: pointer;
+			margin: 20px;
+		}
+		.pla9 img:hover{
+			content: url("pla91.png");
+		}
+		.pla9 p{
+			margin-left: 25px;
+		}
+		
+		.pla10 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla10 img:hover{
+			content: url("pla100.png");
+		}
+		.pla10 p{
+			margin-left: 25px;
+		}
+
+		.pla11 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla11 img:hover{
+			content: url("pla22.png");
+		}
+		.pla11 p{
+			margin-left: 25px;
+		}
+
+		.pla12 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla12 img:hover{
+			content: url("pla24.png");
+		}
+		.pla12 p{
+			margin-left: 25px;
+		}
+		.pla13 img{
+			width: 100%;
+			cursor: pointer;
+			margin: 20px;
+		}
+		.pla13 img:hover{
+			content: url("pla32.png");
+		}
+		.pla13 p{
+			margin-left: 25px;
+		}
+		
+		.pla14 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla14 img:hover{
+			content: url("pla34.png");
+		}
+		.pla14 p{
+			margin-left: 25px;
+		}
+
+		.pla15 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla15 img:hover{
+			content: url("pla36.png");
+		}
+		.pla15 p{
+			margin-left: 25px;
+		}
+
+		.pla16 img{
+			width: 100%;
+			margin: 20px;
+			cursor: pointer;
+		}
+		.pla16 img:hover{
+			content: url("pla38.png");
+		}
+		.pla16 p{
+			margin-left: 25px;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			display: flex;
+			height: 60vh;
+			margin-top: 35px;
+
+		}
+		.help {
+			font-size: 20px;
+			margin: 5vh 40px;
+			
+			
+		}
+		.help a {
+			margin-bottom: 5px;
+		}
+		.acoount{
+			margin: 5vh 40px;
+			font-size: 20px;
+
+		}
+		.link h6 {
+			font-size: 20px;
+			margin: 5vh 40px;
+		}
+		h6{
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+
+		footer a {
+			display: flex;
+			color: white;
+			text-decoration: none;
+			margin-bottom: 5px;
+		}
+		footer a:hover{
+			color: red;
+		}
+		input{
+			padding: 10px 100px;
+		}
+		#recordi {
+			color: red;
+		}
+		.link img {
+			width: 50px;
+			height: 5vh;
+			margin-left: 10px;
+
+		}
+		.link ul{
+			list-style: none;
+			margin-left: 20px;
+		}
+		
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<a href="" class="logo">Underground RECORD STORE</a>
+		<nav class="navbar">
+			<input  type="text" placeholder="Search fo artists & releases.....">
+		    <a href="the sound.html">Home</a>
+		    <a href="new.html" class="stay">News Vinyl</a>
+		    <a href="second.html">Second-hand</a>
+		    <a href="gift.html">GiftCard</a>
+		    <a href="Record.html" id="recordi">Record Player</a>
+		    
+		    <a href="login.html">Login</a>
+		    <a href="list.html">&#128722</a>
+		</nav>
+	</div>
+	<div class="choice">
+		<div class="label">
+			<h1>Record Players</h1>
+			<div class="right">
+				<label >Sort by:</label>
+				<select >
+					<option>Best Selling</option>
+					<option>Featured</option>
+					<option>Price Low</option>
+					<option>Price Hight</option>
+				</select>
+				<label >Browser:</label>
+				<select >
+					<option>All</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="pla">
+		<div class="pla1">
+			<img src="pla1.png">
+			<p>The Re-Spin Sustainable Bluetooth<br>Suitcase Record Player, Blue</p>
+		</div>
+		<div class="pla2">
+		    <img src="pla2.png">
+		    <p>The Re-Spin Sustainable Bluetooth<br> Suitcase Record Player, Gray</p>
+		</div>
+		<div class="pla3">
+			<img src="pla3.png">
+			<p>The Re-Spin Sustainable Bluetoothk<br>Suitcase Record Player, Green</p>
+		</div>
+		<div class="pla4">
+			<img src="pla4.png">
+			<p>The Re-Spin Sustainable Bluetooth<br> Suitcase Record Player, Red</p>
+		</div>
+	</div>
+	<div class="pla">
+		<div class="pla5">
+			<img src="pla5.png">
+			<p>The Journey Portable Suitcase<br> Record Player with 3-speed<br> Turntable, Black</p>
+		</div>
+		<div class="pla6">
+			<img src="pla6.png">
+			<p>The Journey Portable Suitcase<br> Record Player with 3-speed<br> Turntable, Turquoise</p>
+		</div>
+		<div class="pla7">
+			<img src="pla7.png">
+			<p>The Journey Portable Suitcase<br> Record Player with 3-speed<br>s Turntable, Map Print</p>
+		</div>
+		<div class="pla8">
+			<img src="pla8.png">
+			<p>The Journey Portable Suitcase<br> Record Player with 3-speed<br> Turntable, UK Flag</p>
+		</div>
+	</div>
+	<div class="pla">
+		<div class="pla9">
+			<img src="pla9.png">
+			<p>Revolution GO Portable Record<br> Player, Black</p>
+		</div>
+		<div class="pla10">
+			<img src="pla10.png">
+			<p>Revolution GO Portable Record<br> Player, Black</p>
+		</div>
+		<div class="pla11">
+			<img src="pla21.png">
+			<p>The Eastwood Signature Hybrid<br> Turntable</p>
+		</div>
+		<div>
+			<div class="pla12">
+				<img src="pla23.png">
+				<p>The Eastwood Hybrid Turntable</p>
+			</div>
+		</div>
+	</div>
+	<div class="pla">
+		<div class="pla13">
+			<img src="pla31.png">
+			<p>Victrola Stream Carbon Works with<br> Sonos Turntable</p>
+		</div>
+		<div class="pla14">
+			<img src="pla33.png">
+			<p>Victrola Premiere V1 Soundbar<br>System</p>
+		</div>
+		<div class="pla15">
+			<img src="pla35.png">
+			<p>The Empire 6-In-1 Bluetooth<br>Turntable Music Centre</p>
+		</div>
+		<div class="pla16">
+			<img src="pla37.png">
+			<p>The Nostalgic 6-in-1 Bluetooth<br>Turntable Music Centre</p>
+		</div>
+	</div>
+	 <footer>
+    	<div class="help">
+    		<h6>Help & FAQ</h6>
+    		<a href="">Rewards Program</a>
+    		<a href="">Search</a>
+    		<a href="">About</a>
+    		<a href="">Contact US</a>
+    		<a href="">Frequently Asked Questions</a>
+    		<a href="">Return Policy</a>
+    		<a href="">Privacy Policy</a>
+    		<a href="">Terms Of Use</a>
+    		<a href="">Do Not Sell My Personal Information</a>
+    		<a href="">Cookie Choices</a>
+    		<p>Copyright@2023 Underground Record Store</p>
+    	</div>
+    	<div class="acoount">
+    		<h6>My Account</h6>
+    		<a href="">Log In</a>
+    		<a href="">Wish List</a>
+    		<a href="">My Bag</a>
+    	</div>
+    	<div class="link">
+    		<h6 >Follows us</h6>
+    		<ul>
+    			<li>
+    				<img src="fac.png" width="60px">
+    				<img src="insta.png">
+    				<img src="twitter.png">
+    			</li>
+    		</ul>
+    	</div>
+    </footer>
+
+</body>
+</html>
